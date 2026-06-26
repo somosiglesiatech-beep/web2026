@@ -281,7 +281,7 @@ function PredicacionesSection() {
               <iframe
                 key={active}
                 className="absolute inset-0 w-full h-full"
-                src={`https://youtube.com/playlist?list=PLtjkaoWpBxNERI2Q3DemdfBsyxQz0LL11&si=n_DcDF7yzpGrpYKv${sermons[active].id}?rel=0&modestbranding=1`}
+                src={`https://www.youtube.com/embed/${sermons[active].id}?rel=0&modestbranding=1`}
                 title={sermons[active].title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
