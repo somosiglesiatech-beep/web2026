@@ -178,22 +178,22 @@ function NuevosSection() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           <div>
-            <SectionLabel>Bienvenidos</SectionLabel>
+            <SectionLabel>Primera vez</SectionLabel>
             <SectionHeading>
-              Bienvenidos <span style={{ color: GOLD }}>iglesia</span>
+              Bienvenidos a<span style={{ color: GOLD }}> Somos iglesia</span>
             </SectionHeading>
             <p className="text-base leading-relaxed mb-4 font-light" style={{ fontFamily: FONT, color: MUTED }}>
-              Somos una comunidad que sigue a Jesús ubicados en el corazón de Neuquén Capital. Cristo es el centro y quien nos edifica.
+              Somos una comunidad cristiana en el corazón de Neuquén Capital.
             </p>
             <p className="text-base leading-relaxed mb-10 font-light" style={{ fontFamily: FONT, color: MUTED }}>
-              Sin importar de dónde vengas, tu historia o tus preguntas, acá hay un lugar para vos.
+              Existimos para glorificar a Dios anunciando el Evangelio, enseñando fielmente su Palabra y formando discípulos que reflejen a Cristo en cada área de su vida.
             </p>
             <div className="mb-10">
               <p className="text-xs uppercase tracking-widest font-semibold mb-4" style={{ fontFamily: FONT, color: DARK, letterSpacing: "0.25em" }}>
                 Lo que creemos
               </p>
               <ul className="space-y-3">
-                {["La Biblia como Palabra de Dios", "Salvación por gracia mediante la fe en Jesús", "El poder transformador del Espíritu Santo", "Efesios 2:19 En Cristo Somos familia de Dios"].map(b => (
+                {["La Biblia como Palabra de Dios", "La salvación por gracia mediante la fe en Jesucristo", "El poder transformador del Espíritu Santo", "Que, por medio de Cristo, ya no somos extranjeros, sino miembros de la familia de Dios (Efesios 2:19)"].map(b => (
                   <li key={b} className="flex items-start gap-3 text-sm" style={{ fontFamily: FONT, color: DARK, fontWeight: 400 }}>
                     <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0" style={{ background: GOLD }} />
                     {b}
@@ -245,7 +245,7 @@ function NuevosSection() {
             <div className="relative overflow-hidden" style={{ minHeight: 160, background: "#e0ddd8" }}>
               <img
                 src="https://res.cloudinary.com/dek3odiw4/image/upload/v1782481739/porteros_lvb41v.jpg"
-                alt="Comunidad de fe"
+                alt="Somos iglesia"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(201,151,58,0.25) 0%, transparent 60%)" }} />
@@ -384,7 +384,7 @@ function EncontranosSection() {
           <div className="md:col-span-2 overflow-hidden border" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
             <iframe
               title="Mapa Somos Iglesia Neuquén"
-              src="https://maps.app.goo.gl/RFPJ6vAPEtypkJZA9"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4613.050097851408!2d-68.0566236!3d-38.9628977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a3336755bd65b%3A0x811e7e3c8ef6401b!2sSomos%20Iglesia%20Neuqu%C3%A9n!5e1!3m2!1ses!2sar!4v1782486411046!5m2!1ses!2sar"
               width="100%"
               height="400"
               style={{ border: 0, display: "block" }}
