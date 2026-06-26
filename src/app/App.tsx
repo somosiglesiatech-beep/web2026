@@ -82,13 +82,13 @@ function NavBar() {
 function HeroSection() {
   return (
     <section id="hero" className="relative flex flex-col items-center justify-center overflow-hidden" style={{ minHeight: "100svh" }}>
-      <div 
-        className="w-full h-full object-cover absolute inset-0 z-0"
-        style={{backgroundImage:'url("https://res.cloudinary.com/dek3odiw4/video/upload/v1782479907/FONDO_3MB_vj0c94.mp4")'}}
-      >
-        {/*  antigua imagen de fondo con un filter: "brightness(0.45)"
-          src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1600&h=900&fit=crop&auto=format"
-        /> */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://res.cloudinary.com/dek3odiw4/image/upload/v1782485020/Sin_t%C3%ADtulo-2_nvl5ma.jpg"
+          alt="Iglesia"
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.45)" }}
+        />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%)" }} />
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(201,151,58,0.1) 0%, transparent 65%)" }} />
       </div>
