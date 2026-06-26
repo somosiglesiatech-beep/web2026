@@ -10,24 +10,25 @@ const WHITE = "#ffffff";
 const OFFWHITE = "#F7F7F7";
 
 const sermons = [
-  { id: "dQw4w9WgXcQ", title: "La Fe que Mueve Montañas", preacher: "Pastor Marcos", date: "22 Jun 2025" },
-  { id: "jNQXAC9IVRw", title: "Juntos en el Camino", preacher: "Pastora Ana", date: "15 Jun 2025" },
-  { id: "9bZkp7q19f0", title: "La Gracia que Transforma", preacher: "Pastor Marcos", date: "8 Jun 2025" },
+  { id: "qv5iohc3kqE", title: "Cristo la Revelación Final", preacher: "Pastor Marcelo", date: "2026" },
+  { id: "kzrw_b3-LZs", title: "Escuchenlo a El", preacher: "Pastora Andrea", date: "Jun 2026" },
+  { id: "HmwdPIgsCcM", title: "El misterio revelado", preacher: "Somos iglesia", date: "2026" },
 ];
 
 const instaPosts = [
-  { id: "1", img: "https://drive.google.com/file/d/1ZUKzorCnE84UkuzFTflX2dBiONaSF2vb/view?usp=drive_link", alt: "Jovenes" },
-  { id: "2", img: "https://drive.google.com/file/d/1srUmK9R_6D049Y08WsLK8oi3hv3ayfjA/view?usp=drive_link", alt: "Bautismo" },
-  { id: "3", img: "https://drive.google.com/file/d/1XoWDHb0bvHCLjAWlMXvOKW3r7Madll3g/view?usp=drive_link", alt: "Estudio Bíblico" },
-  { id: "4", img: "https://drive.google.com/file/d/1cIG6ItJ3Wayd0pBINlwy47c4IwvZ1hCt/view?usp=drive_link", alt: "Familia de la iglesia" },
-  { id: "5", img: "https://drive.google.com/file/d/1LOUmAbGzOR_XthY61rpxI1Sof8Iy9d3s/view?usp=drive_link", alt: "Alabanza y adoración" },
-  { id: "6", img: "https://drive.google.com/file/d/1meZycNAg1cvw0TlKq1ppBf0DKbRFUpLE/view?usp=drive_link", alt: "Iglesia" },
+  { id: "1", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481748/jovenes_orando_tamalr.webp", alt: "Jovenes" },
+  { id: "2", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481743/bautismo_assykn.webp", alt: "Bautismo" },
+  { id: "3", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481737/hombre_leyendo_la_biblia_k76iw6.jpg", alt: "Estudio Bíblico" },
+  { id: "4", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481742/abrazo_mujeres_zs4vhr.webp", alt: "Familia de la iglesia" },
+  { id: "5", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481740/santa_cena_rqldni.jpg", alt: "Alabanza y adoración" },
+  { id: "6", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481752/pareja_sonriendo_saoq4a.webp", alt: "Iglesia" },
 ];
 
 const schedules = [
-  { day: "Domingo", time: "10:00 & 18:00 hs", label: "Culto principal" },
-  { day: "Miércoles", time: "20:00 hs", label: "Reunión de oración" },
-  { day: "Viernes", time: "20:30 hs", label: "Jóvenes" },
+  { day: "Domingo", time: "11:00 am", label: "Culto principal" },
+  { day: "Martes de Oración", time: "19:00 hs", label: "Culto de oración" },
+  { day: "Miércoles", time: "20:00 hs", label: "Estudiamos las escrituras" },
+  { day: "Sábado", time: "19:30 hs", label: "Culto de Jóvenes" },
 ];
 
 function NavBar() {
@@ -83,13 +84,10 @@ function HeroSection() {
     <section id="hero" className="relative flex flex-col items-center justify-center overflow-hidden" style={{ minHeight: "100svh" }}>
       <div 
         className="w-full h-full object-cover absolute inset-0 z-0"
-        style={{backgroundImage:'url("https://sites.google.com/u/1/sites-images-rt/APjpZ02gdsPB7Y4UjGqJtcJ23C0AvZUJgkSPmA9eyufx0YSCXqL_jWWNDyWKhdZ5KxcV4JKR0Wxr06eYd6VakcGuTjJyvS_zTJa_hsppQoOsHcDd5cl0bjFywOSfTYqWJesvHXAlRjtkRNdzK3fN8dxmEarkb_8zDADta4M9zjo87CdXye_cl7myH6LrEN-oEvlaYg=s2048")'}}
+        style={{backgroundImage:'url("https://res.cloudinary.com/dek3odiw4/video/upload/v1782479907/FONDO_3MB_vj0c94.mp4")'}}
       >
-        {/* <img
+        {/*  antigua imagen de fondo con un filter: "brightness(0.45)"
           src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1600&h=900&fit=crop&auto=format"
-          alt="Iglesia"
-          className="w-full h-full object-cover"
-          style={{ filter: "brightness(0.45)" }}
         /> */}
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%)" }} />
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(201,151,58,0.1) 0%, transparent 65%)" }} />
@@ -182,10 +180,10 @@ function NuevosSection() {
           <div>
             <SectionLabel>Bienvenidos</SectionLabel>
             <SectionHeading>
-              Nuevos en la <span style={{ color: GOLD }}>iglesia</span>
+              Bienvenidos <span style={{ color: GOLD }}>iglesia</span>
             </SectionHeading>
             <p className="text-base leading-relaxed mb-4 font-light" style={{ fontFamily: FONT, color: MUTED }}>
-              Somos una comunidad que sigue a Jesús en el corazón de Neuquén Capital. Cristo es el centro y quien edifica su iglesia.
+              Somos una comunidad que sigue a Jesús ubicados en el corazón de Neuquén Capital. Cristo es el centro y quien nos edifica.
             </p>
             <p className="text-base leading-relaxed mb-10 font-light" style={{ fontFamily: FONT, color: MUTED }}>
               Sin importar de dónde vengas, tu historia o tus preguntas, acá hay un lugar para vos.
@@ -246,7 +244,7 @@ function NuevosSection() {
             {/* Photo */}
             <div className="relative overflow-hidden" style={{ minHeight: 160, background: "#e0ddd8" }}>
               <img
-                src="https://drive.google.com/file/d/1xTMLRcMFvTIS77TwKHzZmmlfMhJJTjcp/view?usp=drive_link"
+                src="https://res.cloudinary.com/dek3odiw4/image/upload/v1782481739/porteros_lvb41v.jpg"
                 alt="Comunidad de fe"
                 className="w-full h-full object-cover"
               />
@@ -283,7 +281,7 @@ function PredicacionesSection() {
               <iframe
                 key={active}
                 className="absolute inset-0 w-full h-full"
-                src={`https://www.youtube.com/embed/videoseries?si=GCBnJ7JYQKzGWmS7&amp;list=PLtjkaoWpBxNERI2Q3DemdfBsyxQz0LL11/${sermons[active].id}?rel=0&modestbranding=1`}
+                src={`https://youtube.com/playlist?list=PLtjkaoWpBxNERI2Q3DemdfBsyxQz0LL11&si=n_DcDF7yzpGrpYKv${sermons[active].id}?rel=0&modestbranding=1`}
                 title={sermons[active].title}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -386,7 +384,7 @@ function EncontranosSection() {
           <div className="md:col-span-2 overflow-hidden border" style={{ borderColor: "rgba(0,0,0,0.08)" }}>
             <iframe
               title="Mapa Somos Iglesia Neuquén"
-              src="https://www.google.com/maps?cid=9304012678755663899&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF&hl=es-ES&source=embed"
+              src="https://maps.app.goo.gl/RFPJ6vAPEtypkJZA9"
               width="100%"
               height="400"
               style={{ border: 0, display: "block" }}
@@ -416,12 +414,11 @@ function EncontranosSection() {
               </p>
               <p className="text-sm font-light leading-relaxed" style={{ fontFamily: FONT, color: MUTED }}>
                 Domingo<br />
-                <span className="font-semibold" style={{ color: GOLD }}>10:00 hs</span> — Culto Matutino<br />
-                <span className="font-semibold" style={{ color: GOLD }}>18:00 hs</span> — Culto Vespertino
+                <span className="font-semibold" style={{ color: GOLD }}>11:00 hs</span> — Domingo en Familia<br />
               </p>
             </div>
 
-            <GoldBtn href="https://maps.google.com/?q=Rio+Negro+735+Neuquen">
+            <GoldBtn href="https://maps.app.goo.gl/RFPJ6vAPEtypkJZA9">
               <MapPin className="w-4 h-4" /> Abrir en Maps
             </GoldBtn>
           </div>
@@ -433,10 +430,10 @@ function EncontranosSection() {
 
 function ContactoSection() {
   const contacts = [
-    { icon: <MessageCircle className="w-6 h-6" />, label: "WhatsApp", value: "+54 299 123-4567", href: "https://wa.me/5429912345678", color: "#25D366" },
+    { icon: <MessageCircle className="w-6 h-6" />, label: "WhatsApp", value: "+54 9 2994 207481", href: "https://wa.me/5492994207481", color: "#25D366" },
     { icon: <Instagram className="w-6 h-6" />, label: "Instagram", value: "@somosiglesianqn", href: "https://www.instagram.com", color: "#E1306C" },
     { icon: <Youtube className="w-6 h-6" />, label: "YouTube", value: "Somos Iglesia Nqn", href: "https://www.youtube.com", color: "#FF0000" },
-    { icon: <Mail className="w-6 h-6" />, label: "Email", value: "hola@somosiglesianqn.com", href: "mailto:hola@somosiglesianqn.com", color: GOLD },
+    { icon: <Mail className="w-6 h-6" />, label: "Email", value: "somosiglesia.tech@gmail.com", href: "mailto:somosiglesia.tech@gmail.com", color: GOLD },
   ];
 
   return (
@@ -447,7 +444,7 @@ function ContactoSection() {
           <span style={{ color: GOLD }}>Contacto</span>
         </SectionHeading>
         <p className="text-base font-light mb-14 max-w-md" style={{ fontFamily: FONT, color: MUTED }}>
-          Estamos acá para vos. Escribinos por el canal que prefieras y con gusto te respondemos.
+          Escribinos por el canal que prefieras y con gusto te respondemos.
         </p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mb-20">
