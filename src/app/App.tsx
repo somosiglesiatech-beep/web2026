@@ -83,7 +83,7 @@ function HeroSection() {
     <section id="hero" className="relative flex flex-col items-center justify-center overflow-hidden" style={{ minHeight: "100svh" }}>
       <div 
         className="w-full h-full object-cover absolute inset-0 z-0"
-        style={{background-image:url("https://drive.google.com/file/d/1GA2LQqI4pix0LleNhMBsfhk9Ip1uJtjX/view?usp=drive_link")}}
+        style={{backgroundImage:'url("https://sites.google.com/u/1/sites-images-rt/APjpZ02gdsPB7Y4UjGqJtcJ23C0AvZUJgkSPmA9eyufx0YSCXqL_jWWNDyWKhdZ5KxcV4JKR0Wxr06eYd6VakcGuTjJyvS_zTJa_hsppQoOsHcDd5cl0bjFywOSfTYqWJesvHXAlRjtkRNdzK3fN8dxmEarkb_8zDADta4M9zjo87CdXye_cl7myH6LrEN-oEvlaYg=s2048")'}}
       >
         {/* <img
           src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=1600&h=900&fit=crop&auto=format"
