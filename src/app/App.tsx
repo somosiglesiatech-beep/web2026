@@ -173,6 +173,44 @@ function GhostBtn({ children, href }: { children: React.ReactNode; href?: string
 }
 
 function NuevosSection() {
+  function planificarVisita() {
+  const hoy = new Date();
+
+  // Calcula el próximo domingo
+  const proximoDomingo = new Date(hoy);
+  const diasHastaDomingo = (7 - hoy.getDay()) % 7 || 7;
+  proximoDomingo.setDate(hoy.getDate() + diasHastaDomingo);
+
+  // Domingo 11:00
+  const inicio = new Date(proximoDomingo);
+  inicio.setHours(11, 0, 0, 0);
+
+  // Domingo 12:30
+  const fin = new Date(proximoDomingo);
+  fin.setHours(12, 30, 0, 0);
+
+  // Formato para Google Calendar (hora local Argentina)
+  const formato = (fecha: Date) => {
+    const y = fecha.getFullYear();
+    const m = String(fecha.getMonth() + 1).padStart(2, "0");
+    const d = String(fecha.getDate()).padStart(2, "0");
+    const h = String(fecha.getHours()).padStart(2, "0");
+    const min = String(fecha.getMinutes()).padStart(2, "0");
+
+    return `${y}${m}${d}T${h}${min}00`;
+  };
+
+  const url =
+    "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    `&text=${encodeURIComponent("Primera visita a Somos Iglesia")}` +
+    `&dates=${formato(inicio)}/${formato(fin)}` +
+    `&location=${encodeURIComponent("Río Negro 735, Neuquén Capital, Argentina")}` +
+    `&details=${encodeURIComponent(
+      "¡Gracias por planificar tu visita!\n\nTe esperamos el domingo a las 11:00 hs.\n\nSi es tu primera vez, llegá unos minutos antes para que podamos recibirte y conocerte."
+    )}`;
+
+  window.open(url, "_blank");
+}
   return (
     <section id="nuevos" className="py-24 px-6" style={{ background: WHITE }}>
       <div className="max-w-6xl mx-auto">
@@ -201,7 +239,7 @@ function NuevosSection() {
                 ))}
               </ul>
             </div>
-            <GoldBtn onClick={() => alert("¡Te esperamos!")}>
+            <GoldBtn onClick={planificarVisita}>
               Planificar mi visita <ArrowRight className="w-4 h-4" />
             </GoldBtn>
           </div>
