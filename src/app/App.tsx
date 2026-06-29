@@ -10,9 +10,9 @@ const WHITE = "#ffffff";
 const OFFWHITE = "#F7F7F7";
 
 const sermons = [
-  { id: "qv5iohc3kqE", title: "Cristo la Revelación Final", preacher: "Pastor Marcelo", date: "2026" },
-  { id: "kzrw_b3-LZs", title: "Escuchenlo a El", preacher: "Pastora Andrea", date: "Jun 2026" },
-  { id: "HmwdPIgsCcM", title: "El misterio revelado", preacher: "Somos iglesia", date: "2026" },
+  { id: "qv5iohc3kqE", title: "Él es la palabra Fiel y Verdadera", preacher: "Pastor Marcelo", date: "2026" },
+  { id: "kzrw_b3-LZs", title: "Escuchenlo a El", preacher: "Pastora Andrea", date: "2026" },
+  { id: "pM1EpwIEbxM", title: "En Cristo hemos sido bendecidos", preacher: "Pastor Marcelo", date: "2026" },
 ];
 
 const instaPosts = [
@@ -20,7 +20,7 @@ const instaPosts = [
   { id: "2", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481743/bautismo_assykn.webp", alt: "Bautismo" },
   { id: "3", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481737/hombre_leyendo_la_biblia_k76iw6.jpg", alt: "Estudio Bíblico" },
   { id: "4", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481742/abrazo_mujeres_zs4vhr.webp", alt: "Familia de la iglesia" },
-  { id: "5", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481740/santa_cena_rqldni.jpg", alt: "Alabanza y adoración" },
+  { id: "5", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481740/santa_cena_rqldni.jpg", alt: "Santa Cena" },
   { id: "6", img: "https://res.cloudinary.com/dek3odiw4/image/upload/v1782481752/pareja_sonriendo_saoq4a.webp", alt: "Iglesia" },
 ];
 
@@ -469,8 +469,8 @@ function EncontranosSection() {
 function ContactoSection() {
   const contacts = [
     { icon: <MessageCircle className="w-6 h-6" />, label: "WhatsApp", value: "+54 9 2994 207481", href: "https://wa.me/5492994207481", color: "#25D366" },
-    { icon: <Instagram className="w-6 h-6" />, label: "Instagram", value: "@somosiglesianqn", href: "https://www.instagram.com", color: "#E1306C" },
-    { icon: <Youtube className="w-6 h-6" />, label: "YouTube", value: "Somos Iglesia Nqn", href: "https://www.youtube.com", color: "#FF0000" },
+    { icon: <Instagram className="w-6 h-6" />, label: "Instagram", value: "@somosiglesianqn", href: "https://www.instagram.com/somosiglesia.nqn", color: "#E1306C" },
+    { icon: <Youtube className="w-6 h-6" />, label: "YouTube", value: "Somos Iglesia Nqn", href: "https://www.youtube.com/@somosiglesiaoficial", color: "#FF0000" },
     { icon: <Mail className="w-6 h-6" />, label: "Email", value: "somosiglesia.tech@gmail.com", href: "mailto:somosiglesia.tech@gmail.com", color: GOLD },
   ];
 
